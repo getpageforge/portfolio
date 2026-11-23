@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ZAYÊ — moda feminina moderna e atemporal." />
+  <title>ZAYÊ — moderna & atemporal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="fix.css" />
+</head>
+<body>
+  <div class="topbar"><span>Frete grátis para todo o Brasil em compras acima de R$ 299</span><span class="topbar-hide">•</span><span class="topbar-hide">5% OFF no PIX</span></div>
+  <header class="header" id="inicio">
+    <button class="icon-button menu-button" aria-label="Abrir menu" aria-expanded="false"><i></i><i></i></button>
+    <a class="brand" href="#inicio" aria-label="Zayê, início"><img src="zaye-logo.jpg" alt="ZAYÊ" /></a>
+    <nav class="desktop-nav" aria-label="Navegação principal">
+      <a href="#novidades">Novidades</a><a href="#colecao">Coleção</a><a href="#vestidos">Vestidos</a><a href="#alfaiataria">Alfaiataria</a><a href="#sobre">A Zayê</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button search-button" aria-label="Buscar"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.2 4.2"/></svg></button>
+      <button class="icon-button bag-button" aria-label="Sacola, 0 itens"><svg viewBox="0 0 24 24"><path d="M5 8.5h14l-1 12H6l-1-12Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg><b class="bag-count">0</b></button>
+    </div>
+  </header>
+  <div class="mobile-menu" hidden><a href="#novidades">Novidades</a><a href="#colecao">Coleção</a><a href="#vestidos">Vestidos</a><a href="#alfaiataria">Alfaiataria</a><a href="#sobre">A Zayê</a></div>
+  <section class="search-panel" hidden><form><label for="search">O que você procura?</label><input id="search" placeholder="Ex.: vestido, linho, blazer" autocomplete="off" /><button aria-label="Fechar busca" type="button">×</button></form></section>
+
+  <main>
+    <section class="hero" aria-label="Campanha Primavera">
+      <img src="https://images.unsplash.com/photo-1591369822096-ffd140ec948f?auto=format&fit=crop&w=1800&q=85" alt="Mulher usando vestido preto elegante" />
+      <div class="hero-content"><p>Nova coleção</p><h1>Entre a luz<br><em>e o agora.</em></h1><a class="button button-light" href="#novidades">Descubra a coleção <span>→</span></a></div>
+    </section>
+
+    <section class="intro" id="colecao"><p class="eyebrow">ZAYÊ / Primavera 26</p><h2>Peças que acompanham<br>seus <em>melhores momentos.</em></h2><p class="intro-copy">Uma curadoria para mulheres que escolhem se vestir de si mesmas — com leveza, presença e intenção.</p></section>
+
+    <section class="category-grid" aria-label="Compre por categoria">
+      <a href="#vestidos" class="category category-tall"><img src="https://images.unsplash.com/photo-1539008835657-9e8e9680c956?auto=format&fit=crop&w=1000&q=85" alt="Vestidos Zayê" /><span>Vestidos <b>→</b></span></a>
+      <a href="#alfaiataria" class="category"><img src="https://images.unsplash.com/photo-1566206091558-7f218b696731?auto=format&fit=crop&w=1000&q=85" alt="Alfaiataria Zayê" /><span>Alfaiataria <b>→</b></span></a>
+      <a href="#novidades" class="category"><img src="https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=1000&q=85" alt="Essenciais Zayê" /><span>Essenciais <b>→</b></span></a>
+    </section>
+
+    <section class="products" id="novidades">
+      <div class="section-heading"><div><p class="eyebrow">Recém-chegados</p><h2>Novidades para <em>você.</em></h2></div><a href="#todos" class="text-link">Ver todos <span>→</span></a></div>
+      <div class="product-grid" id="product-grid"></div>
+    </section>
+
+    <section class="editorial" id="vestidos"><div class="editorial-image"><img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1400&q=85" alt="Modelo Zayê em vestido claro" /></div><div class="editorial-copy"><p class="eyebrow">Em foco</p><h2>O vestido<br>que fica na<br><em>memória.</em></h2><p>Modelagens que desenham o corpo com fluidez. Para dias que pedem presença sem esforço.</p><a href="#novidades" class="text-link">Conheça os vestidos <span>→</span></a></div></section>
+
+    <section class="products soft-section" id="alfaiataria"><div class="section-heading"><div><p class="eyebrow">Seleção Zayê</p><h2>Feito para <em>permanecer.</em></h2></div><div class="filters" aria-label="Filtros de produto"><button class="filter active" data-filter="todos">Todos</button><button class="filter" data-filter="linho">Linho</button><button class="filter" data-filter="alfaiataria">Alfaiataria</button></div></div><div class="product-grid" id="second-grid"></div></section>
+
+    <section class="store" id="sobre"><img src="https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=1600&q=85" alt="Interior iluminado de uma boutique de moda" /><div><p class="eyebrow">Zayê em Barão</p><h2>Mais perto de <em>você.</em></h2><p>Visite nossa loja física e viva a experiência ZAYÊ de perto.</p><address>Travessa Marcelo Ferreira, 902<br>Barão — MA</address><a class="button button-dark" href="https://www.instagram.com/usezaye_/" target="_blank" rel="noopener">Falar com a gente <span>→</span></a></div></section>
+  </main>
+  <section class="benefits"><div><b>Entrega para todo o Brasil</b><span>Com carinho, até você.</span></div><div><b>5% OFF no PIX</b><span>Seu jeito favorito de pagar.</span></div><div><b>Troca facilitada</b><span>Até 7 dias após o recebimento.</span></div></section>
+  <footer><div class="footer-brand"><img src="zaye-logo.jpg" alt="ZAYÊ" /><p>Para mulheres modernas<br>e atemporais.</p><a href="https://www.instagram.com/usezaye_/" target="_blank" rel="noopener">Instagram @usezaye_ ↗</a></div><div><h3>Institucional</h3><a href="#sobre">Sobre a Zayê</a><a href="#sobre">Nossa loja</a><a href="#">Envios e entregas</a></div><div><h3>Ajuda</h3><a href="#">Trocas e devoluções</a><a href="#">Dúvidas frequentes</a><a href="#sobre">Fale conosco</a></div><form class="newsletter"><h3>Um convite para ficar.</h3><p>Receba novidades, curadorias e um pouco da ZAYÊ no seu e-mail.</p><label for="email" class="sr-only">Seu e-mail</label><div><input id="email" type="email" placeholder="Seu melhor e-mail" required /><button aria-label="Enviar e-mail">→</button></div><small class="newsletter-message" aria-live="polite"></small></form><div class="footer-bottom">© 2026 ZAYÊ. Todos os direitos reservados.<span>Barão — Maranhão</span></div></footer>
+  <aside class="cart" aria-label="Sacola" hidden><div class="cart-top"><h2>Sua sacola</h2><button aria-label="Fechar sacola">×</button></div><div class="cart-items"><p class="empty-cart">Sua sacola ainda está vazia.</p></div><div class="cart-total"><span>Subtotal</span><b>R$ 0,00</b><button class="button button-dark checkout" disabled>Finalizar pedido →</button></div></aside><div class="overlay" hidden></div>
+  <template id="product-template"><article class="product-card"><a href="#produto" class="product-image"><img src="" alt="" /><span class="tag"></span><button class="wish" aria-label="Adicionar aos favoritos">♡</button></a><div class="product-info"><div><h3></h3><p class="price"></p></div><button class="add" aria-label="Adicionar à sacola">Adicionar <span>+</span></button></div></article></template>
+  <script src="app.js"></script>
+</body>
+</html>

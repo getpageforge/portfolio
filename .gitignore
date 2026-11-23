@@ -1,0 +1,15 @@
+# Ambiente e dependências
+node_modules/
+.env
+.env.*
+
+# Arquivos temporários e de trabalho local
+*.py
+*.txt
+*.tmp
+denarius-atualizado.html
+index (1).html
+
+# Sistema operacional
+.DS_Store
+Thumbs.db

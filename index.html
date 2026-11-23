@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Isaac Santos Lima | Portfólio</title>
+<meta name="description" content="Portfólio de Isaac Santos Lima, estudante de Desenvolvimento Full Stack em Sergipe.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600&display=swap">
+<style>
+:root{--bg:#e8eaec;--sf:#f6f7f8;--ink:#12161c;--mu:#434c59;--ln:rgba(18,22,28,.16);--ac:#0a6b52;--on:#fff;
+--fd:'Bricolage Grotesque','Trebuchet MS',system-ui,sans-serif;--fb:'Figtree',system-ui,-apple-system,'Segoe UI',sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1419;--sf:#171d24;--ink:#eef1f4;--mu:#a9b3be;--ln:rgba(238,241,244,.18);--ac:#5fd3ab;--on:#0f1419;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0f1419;--sf:#171d24;--ink:#eef1f4;--mu:#a9b3be;--ln:rgba(238,241,244,.18);--ac:#5fd3ab;--on:#0f1419;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 var(--fb);-webkit-font-smoothing:antialiased}
+.wrap{max-width:1080px;margin:0 auto;padding:0 clamp(1.25rem,4vw,2.5rem)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--ac);outline-offset:3px;border-radius:6px}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-top:1.25rem;padding-bottom:1.25rem}
+.logo{font:800 1.1rem var(--fd);text-decoration:none;letter-spacing:-.01em}
+nav{display:flex;align-items:center;gap:clamp(.9rem,3vw,1.75rem);font-weight:500;font-size:.97rem}
+nav a{text-decoration:none;color:var(--mu)}
+nav a:hover{color:var(--ink)}
+.tema{font:inherit;font-weight:500;background:none;color:var(--mu);border:1px solid var(--ln);border-radius:999px;padding:.3rem .85rem;cursor:pointer}
+.tema:hover{color:var(--ink);border-color:var(--ink)}
+.hero{padding:clamp(3rem,10vw,7rem) 0 clamp(2.5rem,7vw,5rem)}
+h1{font:800 clamp(3rem,10.5vw,7.5rem)/.95 var(--fd);letter-spacing:-.035em;margin:0 0 1.5rem}
+.lead{font-size:clamp(1.15rem,2.4vw,1.45rem);line-height:1.5;max-width:34em;margin:0 0 .75rem}
+.loc{color:var(--mu);margin:0 0 2rem}
+.acoes{display:flex;flex-wrap:wrap;gap:.75rem}
+.btn{display:inline-block;font:600 1rem var(--fb);text-decoration:none;background:var(--ac);color:var(--on);padding:.8rem 1.4rem;border-radius:12px}
+.btn:hover{filter:brightness(1.1)}
+.btn.sec2{background:none;color:var(--ink);border:1px solid var(--ln)}
+.btn.sec2:hover{border-color:var(--ink);filter:none}
+.sec{padding:clamp(2.5rem,7vw,5rem) 0}
+h2{font:800 clamp(1.7rem,4.2vw,2.6rem)/1.1 var(--fd);letter-spacing:-.02em;margin:0 0 1.75rem}
+.proj{display:grid;grid-template-columns:64px 1fr;gap:1.5rem;padding:2rem 0;border-top:1px solid var(--ln)}
+.proj:last-of-type{border-bottom:1px solid var(--ln)}
+.fav{width:64px;height:64px;padding:8px;border-radius:12px;background:#1a120c;object-fit:contain;flex-shrink:0}
+.fav-light{background:#f0f0f0}
+.fav-dark{background:#0d0d0d}
+.proj h3{font:800 clamp(1.4rem,3vw,1.9rem)/1.2 var(--fd);letter-spacing:-.015em;margin:0 0 .75rem}
+.bdg{font:600 .95rem var(--fb);letter-spacing:0;color:var(--ac);margin-left:.75rem;white-space:nowrap}
+.proj p{margin:0 0 1rem;max-width:36em}
+.stack{color:var(--mu);font-size:.97rem;margin:0 0 1rem}
+.lnk{font-weight:600;color:var(--ink);text-underline-offset:.25em;text-decoration-thickness:2px;text-decoration-color:var(--ac);margin-right:1.5rem}
+.nota{font-size:.95rem;color:var(--mu);margin:1.25rem 0 0}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:2rem}
+.cols div{border-top:1px solid var(--ln);padding-top:1rem}
+.cols h3{font:800 1.15rem var(--fd);margin:0 0 .5rem}
+.cols p{margin:0;color:var(--mu)}
+.ia{margin:2.5rem 0 0;max-width:40em;font-size:1.05rem}
+.fim p{max-width:34em;margin:0 0 1.5rem}
+.mail{display:block;margin-top:1rem;color:var(--mu)}
+footer{border-top:1px solid var(--ln);padding:1.5rem 0 2rem;color:var(--mu);font-size:.95rem}
+@media (max-width:480px){.proj{grid-template-columns:48px 1fr;gap:1rem}.fav{width:48px;height:48px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="logo" href="#topo">Isaac Santos Lima</a>
+    <nav aria-label="Principal">
+      <a href="#projeto">Projetos</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+      <button class="tema" id="tema" type="button" aria-label="Alternar entre tema claro e escuro">Tema</button>
+    </nav>
+  </div>
+</header>
+
+<main id="topo">
+  <section class="hero">
+    <div class="wrap">
+      <h1>Isaac Santos Lima</h1>
+      <p class="lead">Estudo desenvolvimento Full Stack e crio páginas e interfaces para a web. Também trabalho com design e edição de vídeo.</p>
+      <p class="loc">Sergipe, Brasil</p>
+      <div class="acoes">
+        <a class="btn" href="#projeto">Ver projetos</a>
+        <a class="btn sec2" href="#contato">Falar comigo</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="projeto">
+    <div class="wrap">
+      <h2>Projetos</h2>
+
+      <!-- Denarius -->
+      <article class="proj">
+        <img class="fav fav-dark" src="projetos/denarius/icon.webp" alt="Ícone do Denarius" width="64" height="64">
+        <div>
+          <h3>Denarius<span class="bdg">Conceito de startup</span></h3>
+          <p>Landing page de uma startup fictícia de gestão financeira para pessoas e negócios. Abre com a logo em vidro líquido feita em WebGL2 e conduz o visitante por manifesto, avaliações e perguntas frequentes com busca.</p>
+          <p>Tem alternância entre tema claro e escuro e rolagem suave. Tudo em um único arquivo HTML, CSS e JavaScript.</p>
+          <p class="stack">HTML · CSS · JavaScript · WebGL2 · Lenis</p>
+          <a class="lnk" href="projetos/denarius/" target="_blank" rel="noopener">Abrir o projeto</a>
+          <a class="lnk" href="https://github.com/getpageforge/PageForge_Portfolio" target="_blank" rel="noopener">Ver código</a>
+          <p class="nota">Projeto de estudo: a Denarius não é uma empresa real.</p>
+        </div>
+      </article>
+
+      <!-- Zayê -->
+      <article class="proj">
+        <img class="fav fav-dark" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iOCIgZmlsbD0iIzFhMWExYSIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBkb21pbmFudC1iYXNlbGluZT0iY2VudHJhbCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0id2hpdGUiIGZvbnQtZmFtaWx5PSJHZW9yZ2lhLCBzZXJpZiIgZm9udC1zdHlsZT0iaXRhbGljIiBmb250LXdlaWdodD0iNDAwIiBmb250LXNpemU9IjE4Ij5aPC90ZXh0Pjwvc3ZnPg==" alt="Ícone Zayê" width="64" height="64">
+        <div>
+          <h3>Zayê<span class="bdg">Ideia de startup</span></h3>
+          <p>Loja de moda feminina com catálogo filtrado por categoria, sacola de compras, lista de favoritos e busca. Atende boutiques que vendem por WhatsApp mas precisam de uma vitrine digital própria.</p>
+          <p>Página estática completa, sem dependência de servidor ou framework.</p>
+          <p class="stack">HTML · CSS · JavaScript</p>
+          <a class="lnk" href="projetos/zaye/" target="_blank" rel="noopener">Abrir o projeto</a>
+          <a class="lnk" href="https://github.com/getpageforge/Zay-" target="_blank" rel="noopener">Ver código</a>
+        </div>
+      </article>
+
+      <!-- Capriccio -->
+      <article class="proj">
+        <img class="fav" style="background:#6b1a2e" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iOCIgZmlsbD0iIzZiMWEyZSIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBkb21pbmFudC1iYXNlbGluZT0iY2VudHJhbCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0id2hpdGUiIGZvbnQtZmFtaWx5PSJHZW9yZ2lhLCBzZXJpZiIgZm9udC13ZWlnaHQ9IjcwMCIgZm9udC1zaXplPSIxOCI+QzwvdGV4dD48L3N2Zz4=" alt="Ícone Capriccio" width="64" height="64">
+        <div>
+          <h3>Capriccio Pizzaria</h3>
+          <p>Landing page para uma pizzaria em Itabaiana, Sergipe. Tem cardápio, seção de avaliações, mapa de localização e botão de pedido direto pelo WhatsApp.</p>
+          <p>Desenvolvida com HTML, CSS e JavaScript, sem dependência de bibliotecas externas.</p>
+          <p class="stack">HTML · CSS · JavaScript</p>
+          <a class="lnk" href="projetos/capriccio/" target="_blank" rel="noopener">Abrir o projeto</a>
+          <a class="lnk" href="https://github.com/getpageforge/PageForge_Portfolio" target="_blank" rel="noopener">Ver código</a>
+        </div>
+      </article>
+
+      <!-- LAG PHONES -->
+      <article class="proj">
+        <img class="fav fav-dark" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iOCIgZmlsbD0iIzAwMCIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBkb21pbmFudC1iYXNlbGluZT0iY2VudHJhbCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0id2hpdGUiIGZvbnQtZmFtaWx5PSJJbnRlciwgc2Fucy1zZXJpZiIgZm9udC13ZWlnaHQ9IjcwMCIgZm9udC1zaXplPSIxMCI+TFA8L3RleHQ+PC9zdmc+" alt="Ícone LAG PHONES" width="64" height="64">
+        <div>
+          <h3>LAG PHONES<span class="bdg">Ideia de startup</span></h3>
+          <p>Site premium para loja de celulares. Apresenta catálogo de produtos Apple, Xiaomi e JBL, assistência técnica, serviço de trade-in e depoimentos de clientes.</p>
+          <p>Permite a pequenas lojas de tecnologia concorrer com varejistas maiores por meio de uma presença digital profissional.</p>
+          <p class="stack">React · TypeScript · Vite · Tailwind CSS · Framer Motion · GSAP · Lenis</p>
+          <a class="lnk" href="projetos/lag-phones/" target="_blank" rel="noopener">Abrir o projeto</a>
+          <a class="lnk" href="https://github.com/getpageforge/PageForge_Portfolio" target="_blank" rel="noopener">Ver código</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="sec" id="sobre">
+    <div class="wrap">
+      <h2>Sobre</h2>
+      <div class="cols">
+        <div>
+          <h3>Estudos</h3>
+          <p>Curso presencial de Desenvolvedor Full Stack, com término previsto para dezembro de 2026. Estou praticando lógica de programação e desenvolvimento web.</p>
+        </div>
+        <div>
+          <h3>Experiência</h3>
+          <p>Jovem Aprendiz em um supermercado desde setembro de 2025, com atendimento a clientes, rotina operacional e trabalho em equipe.</p>
+        </div>
+        <div>
+          <h3>Design e vídeo</h3>
+          <p>Crio e edito peças gráficas, trato fotografias e monto vídeos. Isso me ajuda a cuidar do visual dos meus projetos.</p>
+        </div>
+      </div>
+      <p class="ia">Meus projetos são feitos com apoio de ferramentas de IA. Meu foco agora é entender melhor o código por trás deles, com o curso e a prática.</p>
+    </div>
+  </section>
+
+  <section class="sec fim" id="contato">
+    <div class="wrap">
+      <h2>Vamos conversar</h2>
+      <p>Estou aberto a oportunidades de aprendiz nas áreas de tecnologia, finanças e administração.</p>
+      <a class="btn" href="mailto:isaacsantosslm@gmail.com">Enviar e-mail</a>
+      <span class="mail">isaacsantosslm@gmail.com</span>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Isaac Santos Lima</div>
+</footer>
+
+<script>
+(function(){
+  var r=document.documentElement,k='portfolio-tema';
+  try{var s=localStorage.getItem(k);if(s==='dark'||s==='light')r.setAttribute('data-theme',s)}catch(e){}
+  document.getElementById('tema').addEventListener('click',function(){
+    var t=r.getAttribute('data-theme');
+    var dark=t?t==='dark':window.matchMedia('(prefers-color-scheme: dark)').matches;
+    var n=dark?'light':'dark';
+    r.setAttribute('data-theme',n);
+    try{localStorage.setItem(k,n)}catch(e){}
+  });
+})();
+</script>
+</body>
+</html>
